@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src=
+"https://code.jquery.com/jquery-3.4.1.min.js">
+	</script>
+
+	<script>
+		// $(document).ready(function () {
+		// 	$("#get_text").click(function () {
+		// 		var inputString = $("#id_text").val();
+		// 		alert(inputString);
+		// 	});
+		// });
+		$(document).ready(function () {
+			$("#form1").submit(function (e) {
+                e.preventDefault();
+				var inputString = $("#id_text").val();
+				alert(inputString);
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<form action="" id="form1">      
+	
+	<input type="text" id="id_text">
+	<br><br>
+
+	<button type="button" id="get_text">
+		Get Value
+	</button>
+    <button type="submit">submit</button>
+    </form>
+</body>
+
+</html>
