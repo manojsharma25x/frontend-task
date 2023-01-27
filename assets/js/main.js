@@ -1,6 +1,9 @@
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     items:1.5,
+    autoplay:true,
+    nav:true,
+    autoplayTimout:2000,
     responsive : {
       // breakpoint from 0 up
       1279 : {
@@ -15,3 +18,4 @@ $(document).ready(function(){
   }
   });
 });
+// https://stackoverflow.com/questions/31224192/owl-carousel-making-custom-navigation
